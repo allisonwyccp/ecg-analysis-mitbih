@@ -40,6 +40,11 @@ The script ends with a summary of all results.
 
 ## Results
 
+![Analysis summary](results/summary.png)
+
+*Overview of the full analysis of MIT-BIH record 208: R-peak detection, beat
+morphology, heart rate, RR interval and Poincaré analysis, and beat classification.*
+
 Record 208 (MLII lead, 360 Hz, 30.1 minutes) contains 2,578 annotated beats,
 2,577 of which were segmented using a window of −200 to +400 ms around each
 R-peak. The record is dominated by normal beats (N) and premature ventricular
@@ -74,9 +79,13 @@ standard HRV analysis would use normal-to-normal intervals only.
 
 ![Preprocessing](results/preprocessing.png)
 
-Raw (magenta) vs. preprocessed (cyan) ECG over 30 seconds. The high-pass filter removes the baseline wander visible from about 23 s onward while preserving beat morphology.
+*Raw (magenta) vs. preprocessed (cyan) ECG over 30 seconds. The high-pass filter removes the baseline wander visible from about 23 s onward while preserving beat morphology.*
 
 ![Classification results](results/classification.png)
+
+*Confusion matrices on the held-out test set (475 normal and 298 ventricular
+beats). N = normal beat, V = premature ventricular contraction. Rows show the
+expert label; columns show the model's prediction.*
 
 ---
 
