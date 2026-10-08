@@ -74,6 +74,8 @@ standard HRV analysis would use normal-to-normal intervals only.
 
 ![Preprocessing](results/preprocessing.png)
 
+Raw (magenta) vs. preprocessed (cyan) ECG over 30 seconds. The high-pass filter removes the baseline wander visible from about 23 s onward while preserving beat morphology.
+
 ![Classification results](results/classification.png)
 
 ---
